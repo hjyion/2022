@@ -1,7 +1,16 @@
 # WISET
 ## 2022 WISET - CapsNet
 
-### 1. Capsnet_Conv3
+### About Capsule Network
+- CapsNet
+##### - Related Work
+- NASCaps : Automated framework for hardware-aware NAS that covers traditional DNN and CapsNet
+  
+   Based on genetic NSGA-II algorithm, uses configurations of underlying HW accelerator and given dataset for training as well as collections of possible types of layers as input. Creating layer library that includes conv layer, capsule layer, CapsCell and FlatCaps. Automated search in NASCaps starts with N randomly generated DNNs, evaluating accuracy after trained with limited epoch and finally pareto-optimal DNN solutions are fully trained.
+
+  NASCaps is proper framework when we have limited design time and training source + when DNN design needs short training duration -> make CapsNet-based DNN's deployment more easier in resource-constrained IoT/Edge device
+
+#### 1. Capsnet_Conv3
 - add Conv2D layer in original Capsnet to increase accuracy
 - Batch size = 128, Epoch = 10
 
@@ -25,7 +34,7 @@
         self.relu3 = nn.ReLU(inplace=True)
 ```
 
-### 2. Res-CapsNet
+#### 2. Res-CapsNet
 - add Residual Block in CapsNet
 - Batch size = 128, Epoch = 10
 - Accuracy : 57.2%
