@@ -13,6 +13,7 @@
 #### 1. Capsnet_Conv3
 - add Conv2D layer in original Capsnet to increase accuracy
 - Batch size = 128, Epoch = 10
+- Final Accuracy : 71.1%
 
 ```python
         # Conv2d layer1
